@@ -22,24 +22,24 @@
 }
 
 .features-list{
-    display: flex;
+    // display: flex;
     @extend %list;
 }
 
 .bacground{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 270px;
-    height: 120px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // width: 270px;
+    // height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;
     background-color: $background-color;
 }
 
-.features-list .item{
-  width:270px;  
-}
+// .features-list .item{
+// //   width:270px;  
+// }
 
 .features-list .item:not(:last-child){
     margin-right: 30px;
