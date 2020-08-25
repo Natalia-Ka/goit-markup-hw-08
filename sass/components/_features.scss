@@ -21,8 +21,7 @@
     line-height: 1.71;
 }
 
-.features-list{
-    // display: flex;
+.features-list{  
     @extend %list;
 }
 
@@ -37,10 +36,14 @@
     background-color: $background-color;
 }
 
-// .features-list .item{
-// //   width:270px;  
-// }
+.features-list .item{
+  width:270px;  
+}
 
 .features-list .item:not(:last-child){
     margin-right: 30px;
+}
+
+.feature-list .item{
+    text-align: center;
 }
