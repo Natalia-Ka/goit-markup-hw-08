@@ -299,7 +299,7 @@ h1, h2, h3, h4, p {
   list-style: none;
 }
 
-.features-title, .work-title, .clients-title {
+.features-title, .work-title {
   margin-top: 0;
   margin-bottom: 50px;
   color: #212121;
@@ -762,7 +762,7 @@ textarea {
 @media screen and (max-width: 767px) {
   .section {
     padding-top: 60px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
   }
 }
 
@@ -877,7 +877,29 @@ textarea {
   color: #FFFFFF;
 }
 
+@media screen and (max-width: 767px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .clients-title {
+    color: #212121;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+  }
+}
+
 .client-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -887,27 +909,11 @@ textarea {
   margin-right: 30px;
 }
 
-.clients-link {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: 1px solid #AFB1B8;
-  border-radius: 4px;
-  color: #AFB1B8;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients-link:hover, .clients-link:focus {
-  border-color: #2196F3;
-  color: #2196F3;
+@media screen and (max-width: 767px) {
+  .clients-link {
+    width: calc((100% - 60px)/2);
+    margin: 15px;
+  }
 }
 
 .icon-logo {
