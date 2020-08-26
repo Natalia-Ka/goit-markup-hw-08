@@ -17,18 +17,19 @@
 }
 
 .features-description {
-    margin-top: 10px;
     color: $primary-text-color;
     line-height: 1.71;
+    margin-top: 10px;
     // margin-bottom: 30px;
 }
 
 @media screen and (max-width: 767px){
-.features-description:not(:last-child) {
-    margin-bottom: 30px;
-    } 
+.feature-item{
+    &:not(:last-child) {
+        margin-bottom: 30px;
+        } 
 }
-
+}
 
 .features-list{  
     @extend %list;

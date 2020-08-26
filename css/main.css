@@ -288,6 +288,10 @@ h1, h2, h3, h4, p {
   margin-bottom: 0;
 }
 
+img {
+  display: block;
+}
+
 .work {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -690,13 +694,13 @@ textarea {
 }
 
 .features-description {
-  margin-top: 10px;
   color: #757575;
   line-height: 1.71;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 767px) {
-  .features-description:not(:last-child) {
+  .feature-item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
