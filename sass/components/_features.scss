@@ -21,6 +21,10 @@
     color: $primary-text-color;
     line-height: 1.71;
     margin-bottom: 30px;
+
+    // &:not(:last-child) {
+    //     margin-bottom: 30px;
+    // }
 }
 
 

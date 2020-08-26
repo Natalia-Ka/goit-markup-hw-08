@@ -288,7 +288,7 @@ h1, h2, h3, h4, p {
   margin-bottom: 0;
 }
 
-.work, .section {
+.work {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -299,7 +299,7 @@ h1, h2, h3, h4, p {
   list-style: none;
 }
 
-.features-title, .work-title, .about-us-title, .clients-title {
+.features-title, .work-title, .clients-title {
   margin-top: 0;
   margin-bottom: 50px;
   color: #212121;
@@ -759,6 +759,25 @@ textarea {
   margin-right: 30px;
 }
 
+@media screen and (max-width: 767px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-us-title {
+    color: #212121;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+  }
+}
+
 .about-us-subtitle {
   font-weight: 500;
   font-size: 16px;
@@ -770,6 +789,7 @@ textarea {
 
 .about-us {
   background-color: #F5F4FA;
+  margin-top: 60px;
 }
 
 .about-us-description {
@@ -784,6 +804,10 @@ textarea {
   margin-bottom: 30px;
 }
 
+.about-us-list {
+  text-align: center;
+}
+
 .about-us-list .item {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -792,8 +816,10 @@ textarea {
   padding-bottom: 24px;
 }
 
-.about-us-list .item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .about-us-list .item {
+    margin-bottom: 30px;
+  }
 }
 
 .sm {
