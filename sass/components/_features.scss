@@ -26,6 +26,11 @@
 }
 
 .bacground{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
     // display: flex;
     // align-items: center;
     // justify-content: center;
@@ -36,14 +41,12 @@
     background-color: $background-color;
 }
 
-.features-list .item{
-  width:270px;  
+.features-list-item{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.features-list .item:not(:last-child){
+.features-list-item:not(:last-child){
     margin-right: 30px;
-}
-
-.feature-list .item{
-    text-align: center;
 }
