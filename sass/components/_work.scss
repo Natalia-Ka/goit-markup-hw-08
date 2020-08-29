@@ -4,12 +4,9 @@
     }
 }
 
-// .work{
-//     @extend %section;
-// }
 
 .section{
-    @extend %section;
+    padding-bottom: 94px;
 }
 
 .work-title{

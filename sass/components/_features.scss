@@ -1,5 +1,9 @@
 .features{
-    padding-top: 94px;
+padding-top: 94px;
+@media screen and (max-width: 767px){ 
+    padding-top: 60px;
+    padding-bottom: 60px; 
+} 
 }
 
 .features-title{
