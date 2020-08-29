@@ -401,6 +401,12 @@ img {
   background-position: center;
 }
 
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/header-480.jpg");
+  }
+}
+
 .btn-hero {
   display: inline-block;
   padding: 10px 32px;
