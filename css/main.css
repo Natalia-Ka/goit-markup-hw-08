@@ -833,6 +833,19 @@ textarea {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .about-us-list .item {
+    -ms-flex-preferred-size: calc((100% - 4 * 15) / 2);
+        flex-basis: calc((100% - 4 * 15) / 2);
+    margin: 15px;
+  }
+}
+
+.about-us-thumb {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .sm {
   text-decoration: none;
 }
