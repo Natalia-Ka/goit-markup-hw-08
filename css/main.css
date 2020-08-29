@@ -844,7 +844,23 @@ textarea {
 }
 
 .about-us-list {
-  text-align: center;
+  margin: -15px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-us-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .about-us-list .item {
@@ -869,17 +885,12 @@ textarea {
   }
 }
 
-@media scree and (min-width: 1140px) {
+@media screen and (min-width: 1140px) {
   .about-us-list .item {
     -ms-flex-preferred-size: calc((100% - 8 * 15px) / 4);
         flex-basis: calc((100% - 8 * 15px) / 4);
     margin: 15px;
   }
-}
-
-.about-us-thumb {
-  margin-left: 0;
-  margin-right: 0;
 }
 
 .sm {
