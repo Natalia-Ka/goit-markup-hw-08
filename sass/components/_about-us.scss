@@ -1,9 +1,10 @@
 .section{
+    @extend %section;
+
     @media screen and (max-width: 767px){ 
         padding-top: 60px;
         padding-bottom: 60px; 
     }
-    // @extend %section;
 }
 
 .about-us-title{

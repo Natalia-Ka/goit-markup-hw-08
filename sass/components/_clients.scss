@@ -1,13 +1,16 @@
 .section{
-    @media screen and (max-width: 767px){ 
+    @extend %section;
+
+    @media screen and (max-width: 1139px){ 
         padding-top: 60px;
         padding-bottom: 60px; 
     }
 }
 
+
 .clients-title{
     // @extend %title;
-    @media screen and (max-width: 767px){
+    
         color: $title-text-color; 
         font-weight: 700;
         font-size: 28px;
@@ -15,17 +18,17 @@
         text-align: center; 
         letter-spacing: 0.03em;
         margin-bottom: 30px;
-    } 
+    
 }
 
 .client-list{
     // justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     @extend %list;
-
-    @media screen and (max-width: 767px) {
-        display:flex;
-        flex-wrap: wrap; 
-    }
+    margin: -15px;
 }
 
 // .client-list .item:not(:last-child){
@@ -53,23 +56,26 @@
         border-color: $accent-color;
         color: $accent-color; 
     }
-
-    @media screen and (max-width:767px){
-        width: 210px;
-    }
 }
 
 
-// .clients-link{
-//     @media screen and (max-width: 767px){
-//         flex-basis: 50%;
-//         flex-basis: calc((100% - 4 * 15) / 2);
-//         margin: 15px;
-//     }
-// }
+.clients-border{
 
+    @media screen and (max-width: 767px){
+        flex-basis: calc((100% - 4 * 15px) / 2); 
+        margin: 15px;
+    }
 
+    @media screen and (min-width: 768px){
+        flex-basis: calc((100% - 6 * 15px) / 3); 
+        margin: 15px;
+    }
 
+    @media screen and (min-width: 1140px){
+        flex-basis: calc((100% - 12 * 15px) / 6);
+        margin: 15px;
+    }
+}
 
 .icon-logo{
    fill: currentColor;
