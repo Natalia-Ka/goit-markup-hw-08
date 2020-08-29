@@ -294,7 +294,7 @@ img {
   height: auto;
 }
 
-.work, .section {
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -305,7 +305,7 @@ img {
   list-style: none;
 }
 
-.features-title, .work-title {
+.features-title, .work-title, .about-us-title {
   margin-top: 0;
   margin-bottom: 50px;
   color: #212121;
@@ -316,6 +316,7 @@ img {
 }
 
 .container {
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -810,14 +811,9 @@ textarea {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1139px) {
   .about-us-title {
-    color: #212121;
-    font-weight: 700;
     font-size: 28px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
     margin-bottom: 30px;
   }
 }
@@ -833,7 +829,6 @@ textarea {
 
 .about-us {
   background-color: #F5F4FA;
-  margin-top: 60px;
 }
 
 .about-us-description {

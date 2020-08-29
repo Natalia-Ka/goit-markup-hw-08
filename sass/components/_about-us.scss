@@ -8,16 +8,12 @@
 }
 
 .about-us-title{
-    // @extend %title;
-    @media screen and (max-width: 767px){
-    color: $title-text-color; 
-    font-weight: 700;
+    @extend %title;
+
+    @media screen and (max-width: 1139px){
     font-size: 28px;
-    line-height: 1.17;
-    text-align: center; 
-    letter-spacing: 0.03em;
     margin-bottom: 30px;
-}       
+}   
 }
 
 .about-us-subtitle{
@@ -32,7 +28,7 @@
 
 .about-us{
     background-color: $background-color;
-    margin-top: 60px;
+    // margin-top: 60px;
 }
 .about-us-description{
     font-size: 16px;
