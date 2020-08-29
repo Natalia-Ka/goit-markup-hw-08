@@ -1,5 +1,5 @@
 .work{
-    @media screen and (max-width:767px){
+    @media screen and (max-width: 1139px){
         display: none;
     }
 }
@@ -39,16 +39,22 @@
     display:flex;
     justify-content: center;
     @extend %list;
+    margin: -15px;
 }
 
 .work-list .item{
 
     position: relative;
     z-index: 0;
-    width:370px;
+    // width:370px;
+
+    @media screen and (min-width: 1140px){
+        flex-basis: calc((100% - 6 * 15px) / 3);
+        margin: 15px;
+    }
     
 }
 
-.work-list .item:not(:last-child){
-    margin-right: 30px;
-}
+// .work-list .item:not(:last-child){
+//     margin-right: 30px;
+// }
