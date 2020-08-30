@@ -5,10 +5,29 @@
         } 
 }
 
-
 .main-nav, .navigation, .site-nav, .contacts-nav{
     display:flex;
     align-items: center;
+}
+
+.menu-button{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.menu-button .icon-close{
+    display: none;
+}
+
+.menu-button.is-open .icon-close{
+    display: block;
+}
+
+.menu-button.is-open .icon-menu{
+    display: none;
 }
 
 .site-nav{
@@ -19,10 +38,6 @@
         } 
 
 }
-
-// .site-nav .item:not(:last-child){
-//     margin-right: 50px;
-// }
 
 .site-nav .item{
     position: relative;
