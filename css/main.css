@@ -400,11 +400,11 @@ img {
   background-color: transparent;
 }
 
-.menu-button .icon-close {
+.menu-button .icon-cross {
   display: none;
 }
 
-.menu-button.is-open .icon-close {
+.menu-button.is-open .icon-cross {
   display: block;
 }
 
