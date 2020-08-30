@@ -418,7 +418,7 @@ img {
   }
 }
 
-.menu-button .icon-cross {
+.menu-button.icon-cross {
   display: none;
 }
 
@@ -435,17 +435,17 @@ img {
   text-align: center;
 }
 
-.menu-container.is-open {
-  display: block;
-}
-
 @media screen and (max-width: 767px) {
   .menu-container {
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     height: 453px;
+  }
+  .menu-container.is-open {
+    display: block;
   }
 }
 

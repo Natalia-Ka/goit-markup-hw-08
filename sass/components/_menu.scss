@@ -23,23 +23,18 @@
     }
 }
 
-.menu-button .icon-cross{
+.menu-button.icon-cross{
     display: none;
 }
 
-.menu-button{ 
-
-&.is-open .icon-cross{
+.menu-button.is-open .icon-cross{
     display: block;
 }
-}
 
-.menu-button{ 
-
-&.is-open .icon-menu{
+.menu-button.is-open .icon-menu{
     display: none;
 }
-}
+
 
 .menu-container{
 
@@ -47,17 +42,17 @@
 
     text-align: center;
 
-    &.is-open{
-        display: block;
-    }
-
     @media screen and (max-width: 767px){
-        // display: none; 
+        display: none; 
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
         height: 453px;
+
+        &.is-open{
+            display: block;
+        }
     }    
 
     @media screen and (min-width: 768px){
