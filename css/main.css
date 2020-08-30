@@ -429,7 +429,6 @@ img {
 }
 
 .menu-container {
-  display: none;
   position: absolute;
   top: 100%;
   left: 0;
@@ -442,6 +441,12 @@ img {
 
 .menu-containeris-open {
   display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 767px) {
