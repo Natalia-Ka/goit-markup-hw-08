@@ -432,6 +432,7 @@ img {
 
 .menu-container {
   background-color: #FFFFFF;
+  text-align: center;
 }
 
 .menu-containeris-open {
@@ -440,7 +441,6 @@ img {
 
 @media screen and (max-width: 767px) {
   .menu-container {
-    display: none;
     position: absolute;
     top: 100%;
     left: 0;
@@ -466,18 +466,18 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .site-navigation, .contacts {
-    display: none;
-  }
-}
-
 .site-nav .item {
   position: relative;
 }
 
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav .item:not(:last-child) {
+    margin-bottom: 40px;
+  }
 }
 
 .contacts {
@@ -507,6 +507,13 @@ img {
 
 .site-nav .menu-link:hover, .site-nav .menu-link:focus {
   color: #2196F3;
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav .menu-link {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .site-nav .active {

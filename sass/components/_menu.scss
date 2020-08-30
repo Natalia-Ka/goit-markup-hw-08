@@ -38,13 +38,15 @@
 .menu-container{
 
     background-color: $primary-white-color;
-    
+
+    text-align: center;
+
     &is-open{
         display: block;
     }
 
     @media screen and (max-width: 767px){
-        display: none; 
+        // display: none; 
         position: absolute;
         top: 100%;
         left: 0;
@@ -62,11 +64,11 @@
 
 }
 
-.site-navigation, .contacts{
-    @media screen and (max-width: 767px){
-        display: none; 
-} 
-}
+// .site-navigation, .contacts{
+//     @media screen and (max-width: 767px){
+        
+// } 
+// }
 
 .site-nav{
     @extend %list;
@@ -77,6 +79,12 @@
 
     &:not(:last-child){
         margin-right: 50px;
+    }
+
+    @media screen and (max-width: 767px){
+        &:not(:last-child){
+            margin-bottom: 40px;
+        }
     }
 }
 
@@ -110,6 +118,12 @@
     &:focus{
         color: $accent-color; 
     }
+
+    @media screen and (max-width: 767px){
+    padding-top: 60px;
+    padding-bottom: 60px;
+    }
+
 }
 
 .site-nav .active{
