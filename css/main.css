@@ -299,7 +299,7 @@ img {
   padding-bottom: 94px;
 }
 
-.features-list, .work-list, .about-us-list, .about-us-sm, .client-list, .footer-social, .portfolio-filters, .portfolio-projects {
+.site-nav, .contacts-nav, .features-list, .work-list, .about-us-list, .about-us-sm, .client-list, .footer-social, .portfolio-filters, .portfolio-projects {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -372,6 +372,132 @@ img {
   letter-spacing: 0.03em;
   text-decoration: none;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .main-nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.main-nav, .navigation, .site-nav, .contacts-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+}
+
+.site-nav .item {
+  position: relative;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+}
+
+.contacts-nav .item + .item {
+  margin-left: 30px;
+}
+
+.site-nav .menu-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #212121;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav .menu-link:hover, .site-nav .menu-link:focus {
+  color: #2196F3;
+}
+
+.site-nav .active {
+  color: #2196F3;
+}
+
+.site-nav .active::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196F3;
+}
+
+.menu-contacts {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-contacts:hover, .menu-contacts:focus {
+  color: #2196F3;
+}
+
+.mail {
+  display: block;
+  color: #757575;
+}
+
+.mail:hover, .mail:focus {
+  color: #2196F3;
+}
+
+.icon-envelope {
+  fill: currentColor;
+  margin-right: 2.8px;
+}
+
+.phone {
+  display: block;
+  color: #757575;
+}
+
+.phone:hover, .phone:focus {
+  color: #2196F3;
+}
+
+.icon-smartfon {
+  fill: currentColor;
+  margin-right: 9.83px;
 }
 
 .hero-title {
