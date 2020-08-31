@@ -520,6 +520,17 @@ img {
   color: #2196F3;
 }
 
+.site-nav .active::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196F3;
+}
+
 .menu-contacts {
   font-weight: 500;
   line-height: 1.14;
