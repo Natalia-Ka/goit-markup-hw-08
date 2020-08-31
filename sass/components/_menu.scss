@@ -160,16 +160,21 @@
 
 // }
 
-.site-nav .active::after{
+.active::after{
     position: absolute;
     content: "";
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
     height: 4px;
     border-radius: 2px;
     background-color: $accent-color;
 
+}
+
+.active{
+    position: relative;
 }
 
 .menu-contacts{
