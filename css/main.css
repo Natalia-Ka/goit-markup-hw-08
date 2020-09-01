@@ -406,7 +406,10 @@ img {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
   margin: 0;
   border: none;
   background-color: transparent;
@@ -492,7 +495,6 @@ img {
 }
 
 .menu-link {
-  display: block;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -513,6 +515,7 @@ img {
 @media screen and (max-width: 767px) {
   .menu-link {
     font-size: 18px;
+    padding-bottom: 8px;
   }
 }
 
@@ -520,21 +523,24 @@ img {
   color: #2196F3;
 }
 
-.active::after {
-  position: absolute;
-  content: "";
-  left: 50%;
-  bottom: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 20%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: #2196F3;
+@media screen and (max-width: 767px) {
+  .site-nav .active {
+    position: relative;
+  }
 }
 
-.active {
-  position: relative;
+@media screen and (max-width: 767px) {
+  .active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2196F3;
+  }
 }
 
 .menu-contacts {
