@@ -758,8 +758,6 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  max-width: 528px;
-  width: 100%;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -771,6 +769,12 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 10;
+}
+
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 450px;
+  }
 }
 
 .btn-close {
@@ -808,12 +812,24 @@ img {
   margin-bottom: 12px;
 }
 
+@media screen and (max-width: 767px) {
+  .modal-title {
+    display: inline-block;
+    width: 370px;
+  }
+}
+
 .modal-form {
   display: block;
-  width: 528px;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-form {
+    width: 450px;
+  }
 }
 
 .modal-form-label {
@@ -829,7 +845,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 448px;
+  max-width: 448px;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -841,13 +858,18 @@ img {
 .modal-form-input {
   letter-spacing: 0.01em;
   color: #757575;
-  width: 100%;
   margin: 0;
   padding-top: 11px;
   padding-bottom: 10px;
   padding-left: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-form-input {
+    width: 370px;
+  }
 }
 
 .modal-icon {
@@ -866,7 +888,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 448px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -875,6 +896,12 @@ img {
   font-size: 12px;
   font-family: Roboto sans-serif;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-form-comment {
+    width: 370px;
+  }
 }
 
 textarea {
@@ -935,6 +962,12 @@ textarea {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (max-width: 767px) {
+  .checkbox-label {
+    font-size: 12px;
+  }
 }
 
 .icon-checkbox {
