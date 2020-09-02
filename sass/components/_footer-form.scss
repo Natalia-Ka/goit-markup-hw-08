@@ -1,21 +1,32 @@
 .footer-newsletter{
-    width: 570px;
-    padding-top: 69px;
-    padding-bottom: 97px;
+    max-width: 570px;
+    // padding-top: 69px;
+    // padding-bottom: 97px;
+
+    @media screen and (max-width: 767px){
+        padding-top: 0;
+        padding-bottom: 60px;
+    }
 }
 
 .form{
-    display:flex;
-    flex-direction: row;
+//     display:flex;
+//     flex-direction: row;
+display: block;
 }
 
 .form-field{
-    display:flex;
-    flex-direction: column;
+//     display:flex;
+//     flex-direction: column;
+
+@media screen and (max-width: 767px){
+    display: block;
+    margin-bottom: 20px;
+}
 }
 
 .form-field input{
-    width: 358px;
+    max-width: 358px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 12px;
@@ -34,8 +45,8 @@
 }
 
  .btn-footer{
-    display: flex; 
-    align-items: center; 
+    // display: flex; 
+    // align-items: center; 
 
     width:200px;
     height: 50px;
@@ -52,12 +63,13 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 29px;
-    padding-right: 28px;
+    // padding-top: 10px;
+    // padding-bottom: 10px;
+    // padding-left: 29px;
+    // padding-right: 28px;
 
-    margin-left: 12px;
+    // margin-left: 12px;
+
 }  
 
 .icon-send{

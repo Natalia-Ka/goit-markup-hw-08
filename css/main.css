@@ -1277,15 +1277,7 @@ textarea {
 
 .bg {
   background-color: #2F303A;
-}
-
-.footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  text-align: center;
 }
 
 .footer-address-contacts {
@@ -1298,10 +1290,13 @@ textarea {
 }
 
 .footer-log-address {
-  width: 270px;
-  margin-right: 30px;
   padding-top: 60px;
-  padding-bottom: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-log-address {
+    padding-bottom: 20px;
+  }
 }
 
 .footer-address {
@@ -1319,16 +1314,28 @@ textarea {
   margin-bottom: 20px;
 }
 
-.footer-sm {
-  width: 270px;
-  margin-right: 93px;
-  padding-top: 72px;
+@media screen and (max-width: 767px) {
+  .footer-sm {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .footer-social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .icon-footer {
@@ -1373,33 +1380,28 @@ textarea {
 }
 
 .footer-newsletter {
-  width: 570px;
-  padding-top: 69px;
-  padding-bottom: 97px;
+  max-width: 570px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-newsletter {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
 }
 
 .form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  display: block;
 }
 
-.form-field {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+@media screen and (max-width: 767px) {
+  .form-field {
+    margin-bottom: 20px;
+  }
 }
 
 .form-field input {
-  width: 358px;
+  max-width: 358px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 12px;
@@ -1417,12 +1419,6 @@ textarea {
 }
 
 .btn-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 200px;
   height: 50px;
   font-weight: 700;
@@ -1436,11 +1432,6 @@ textarea {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 29px;
-  padding-right: 28px;
-  margin-left: 12px;
 }
 
 .icon-send {

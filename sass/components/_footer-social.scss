@@ -8,13 +8,23 @@
 }
 
 .footer-sm{
-    width: 270px;
-    margin-right: 93px;
-    padding-top: 72px;
+    // width: 270px;
+    // margin-right: 93px;
+    // padding-top: 72px;
+
+    @media screen and (max-width: 767px){
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 
 .footer-social{
     display: flex;
+
+    @media screen and (max-width: 767px){ 
+    justify-content: center;
+    align-items: center;
+    }
 }
 
 .icon-footer{
