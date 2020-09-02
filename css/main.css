@@ -345,17 +345,10 @@ img {
   display: inline-block;
   font-family: Raleway sans-serif;
   font-weight: 700;
-  font-size: 26px;
   line-height: 1.19;
   color: #212121;
   letter-spacing: 0.03em;
   text-decoration: none;
-}
-
-@media screen and (min-width: 768px) {
-  .logo {
-    margin-right: 85px;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -366,13 +359,37 @@ img {
   }
 }
 
+@media screen and (min-width: 678px) and (max-width: 1139px) {
+  .logo {
+    font-size: 24px;
+    padding-top: 26px;
+  }
+}
+
+@media screen and (min-width: 678px) and (min-width: 1140px) {
+  .logo {
+    font-size: 26px;
+  }
+}
+
 .logo-web {
   color: #2196F3;
   font-family: Raleway sans-serif;
   font-weight: 700;
-  font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1139px) {
+  .logo-web {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .logo-web {
+    font-size: 26px;
+  }
 }
 
 .logo-footer {
@@ -391,8 +408,16 @@ img {
   position: relative;
 }
 
-@media screen and (min-width: 768px) {
-  .main-nav, .navigation, .site-nav, .contacts-nav {
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+  .main-nav, .navigation, .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .main-nav, .navigation, .site-nav, .contacts, .contacts-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -410,7 +435,6 @@ img {
   padding-bottom: 10px;
   padding-left: 0;
   padding-right: 0;
-  margin: 0;
   border: none;
   background-color: transparent;
 }
@@ -435,11 +459,11 @@ img {
 
 .menu-container {
   background-color: #FFFFFF;
-  text-align: center;
 }
 
 @media screen and (max-width: 767px) {
   .menu-container {
+    text-align: center;
     display: none;
     position: absolute;
     top: 100%;
@@ -476,9 +500,30 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+  .site-navigation {
+    padding-top: 32px;
+    padding-bottom: 0px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .contacts {
     padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+  .contacts {
+    margin-left: 84px;
+    padding-top: 21px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+  .site-nav {
+    padding-bottom: 32px;
+    margin-left: 88px;
   }
 }
 
@@ -488,9 +533,27 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .site-nav .item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .mail:not(:last-child), .phone:not(:last-child) {
     margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .contacts {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .contacts-nav .item + .item {
+    margin-left: 30px;
   }
 }
 
@@ -514,33 +577,42 @@ img {
 
 @media screen and (max-width: 767px) {
   .menu-link {
+    display: block;
     font-size: 18px;
     padding-bottom: 8px;
   }
 }
 
+@media screen and (min-width: 768px) {
+  .menu-link {
+    display: block;
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .menu-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
 .site-nav .active {
   color: #2196F3;
+  position: relative;
 }
 
-@media screen and (max-width: 767px) {
-  .site-nav .active {
-    position: relative;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .active::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: #2196F3;
-  }
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196F3;
 }
 
 .menu-contacts {
@@ -564,6 +636,12 @@ img {
 @media screen and (max-width: 767px) {
   .menu-contacts {
     font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-contacts {
+    font-size: 14px;
   }
 }
 
