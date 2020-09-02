@@ -1296,7 +1296,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1140px) {
+@media screen and (min-width: 768px) and (max-width: 1139px) {
   .footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1309,6 +1309,8 @@ textarea {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -1331,16 +1333,17 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1139px) {
   .footer-log-address {
     text-align: center;
+    padding-left: 76px;
   }
 }
 
 @media screen and (min-width: 1140px) {
   .footer-log-address {
     width: 270px;
-    margin-right: 30px;
+    margin-right: 70px;
     padding-bottom: 60px;
   }
 }
@@ -1364,6 +1367,12 @@ textarea {
   .footer-sm {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+  .footer-sm {
+    padding-right: 89px;
   }
 }
 
@@ -1440,7 +1449,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1139px) {
   .footer-newsletter {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1457,7 +1466,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1139px) {
   .c2a-tablet {
     text-align: center;
   }
