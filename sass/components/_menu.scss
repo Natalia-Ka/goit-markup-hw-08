@@ -14,7 +14,16 @@
     }
 }
 
+// // .main-nav{
+// //     @media screen and (max-width: 767px){
+// //     position: relative;
+// // }
+// }
+
 .menu-button{
+    position: absolute;
+    top: 0;
+    right: 0;
     display: inline-flex;
     padding-top: 10px;
     padding-bottom: 10px;
