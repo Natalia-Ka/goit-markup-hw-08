@@ -1296,6 +1296,22 @@ textarea {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1140px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .footer-address-contacts {
   display: block;
   margin-top: 9px;
@@ -1312,6 +1328,12 @@ textarea {
 @media screen and (max-width: 767px) {
   .footer-log-address {
     padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-log-address {
+    text-align: center;
   }
 }
 
@@ -1420,8 +1442,10 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .footer-newsletter {
-    padding-top: 0;
+    padding-top: 60px;
     padding-bottom: 60px;
+    padding-right: 152px;
+    padding-left: 166px;
   }
 }
 
@@ -1430,6 +1454,18 @@ textarea {
     max-width: 570px;
     padding-top: 69px;
     padding-bottom: 97px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .c2a-tablet {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    text-align: center;
   }
 }
 
