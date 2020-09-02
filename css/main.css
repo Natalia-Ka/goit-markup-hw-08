@@ -342,7 +342,6 @@ img {
 }
 
 .logo {
-  display: inline-block;
   font-family: Raleway sans-serif;
   font-weight: 700;
   line-height: 1.19;
@@ -409,7 +408,7 @@ img {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1139px) {
-  .main-nav, .navigation, .site-nav {
+  .navigation, .site-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -428,9 +427,6 @@ img {
 }
 
 .menu-button {
-  position: absolute;
-  top: 0;
-  right: 0;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -586,7 +582,6 @@ img {
 
 @media screen and (max-width: 767px) {
   .menu-link {
-    display: block;
     font-size: 18px;
     padding-bottom: 8px;
   }
@@ -594,7 +589,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .menu-link {
-    display: block;
     padding-bottom: 32px;
   }
 }
@@ -1682,9 +1676,6 @@ textarea {
   background-color: #F5F4FA;
   border-radius: 4px;
   border-width: 0px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-family: Roboto sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -1706,13 +1697,15 @@ textarea {
           box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
-.portfolio-filters {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media screen and (max-width: 767px) {
+  .portfolio-filters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 362px;
+  }
 }
 
 .portfolio-filters .item:not(:last-child) {
@@ -1803,23 +1796,17 @@ textarea {
 }
 
 .portfolio-projects {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   padding-top: 34px;
 }
 
 .portfolio-projects .item {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
   margin-right: 30px;
   margin-bottom: 30px;
   background: #FFFFFF;
 }
 
 .border {
-  width: 370px;
   border-right: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;

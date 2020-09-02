@@ -2,7 +2,7 @@
     position: relative;
 }
 
- .main-nav, .navigation, .site-nav {
+  .navigation, .site-nav {
     @media screen and (min-width: 768px) and (max-width: 1139px){
     display: flex;
 }
@@ -16,9 +16,6 @@
 
 
 .menu-button{
-    position: absolute;
-    top: 0;
-    right: 0;
     display: inline-flex;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -78,8 +75,8 @@
 
 .site-navigation{
     @media screen and (max-width: 767px){
-        padding-top: 60px;
-        padding-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 } 
     @media screen and (min-width: 768px) and (max-width: 1139px){
     padding-top: 32px;
@@ -166,13 +163,11 @@
     }
 
     @media screen and (max-width: 767px){
-        display: block;
         font-size: 18px;
         padding-bottom: 8px;
     }
 
     @media screen and (min-width: 768px){
-        display: block;
         padding-bottom: 32px;
     }
 

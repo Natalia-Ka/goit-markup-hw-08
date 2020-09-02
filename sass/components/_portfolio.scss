@@ -78,21 +78,22 @@
 }
 
 .portfolio-projects{
-    display:flex;
-    flex-wrap:wrap;
+    // display:flex;
+    // flex-wrap:wrap;
     padding-top: 34px;
     @extend %list;
 }
 
 .portfolio-projects .item{
-    width: calc((100% - 60px) / 3);
+    // width: calc((100% - 60px) / 3);
+    width: 100%;
     margin-right: 30px;
     margin-bottom: 30px;
     background: $primary-white-color;
 }
 
 .border{
-    width: 370px;
+    // width: 370px;
     border-right: 1px solid $border-portfolio-color;
     border-left: 1px solid $border-portfolio-color;
     border-bottom: 1px solid $border-portfolio-color;
