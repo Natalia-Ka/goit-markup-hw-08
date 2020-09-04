@@ -1833,11 +1833,58 @@ textarea {
   padding-top: 34px;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .portfolio-projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.portfolio-picture {
+  width: 100%;
+}
+
 .portfolio-projects .item {
   width: 100%;
   margin-right: 30px;
   margin-bottom: 30px;
   background: #FFFFFF;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-projects .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-projects .item {
+    -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
+        flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .portfolio-projects .item {
+    width: calc((100% - 60px) / 3);
+    margin: 15px;
+  }
 }
 
 .border {
@@ -1847,10 +1894,6 @@ textarea {
   border-top: none;
   padding-top: 20px;
   padding-bottom: 20px;
-}
-
-.portfolio-projects .item:nth-child(3n) {
-  margin-right: 0;
 }
 
 .portfolio-description {
