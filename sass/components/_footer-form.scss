@@ -1,16 +1,16 @@
 .footer-newsletter{
 
-    @media screen and (max-width: 767px){
+    @media screen and (min-width: $mobile){
         padding-top: 0;
         padding-bottom: 60px;
     }
-    @media screen and (min-width: 768px) and (max-width: 1139px){
+    @media screen and (min-width: $tablet) and (max-width: 1199px){
         padding-top: 60px;
         padding-bottom: 60px;
         padding-right: 152px;
         padding-left: 166px;
     }
-    @media screen and (min-width: 1140px){
+    @media screen and (min-width: $desktop){
         max-width: 570px;
         padding-top: 69px;
         padding-bottom: 97px;
@@ -18,16 +18,16 @@
 }
 
 .c2a-tablet{ 
-@media screen and (min-width: 768px) and (max-width: 1139px){
+@media screen and (min-width: $tablet) and (max-width: 1199px){
     text-align: center;
     }
 }
 
 .form{
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: $tablet) and (max-width: 1199px){
     text-align: center;
     }
-    @media screen and (min-width: 1140px){
+    @media screen and (min-width: $desktop){
     display:flex;
     flex-direction: row;
 }
@@ -35,13 +35,13 @@
 
 .form-field{
 
-@media screen and (max-width: 767px){
+@media screen and (min-width: $mobile){
     margin-bottom: 20px;
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: $tablet){
     margin-bottom: 20px;
 }
-@media screen and (min-width: 1140px){
+@media screen and (min-width: $desktop){
     display: flex;
     flex-direction: column;
 }
@@ -64,15 +64,15 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
 
-    @media screen and (max-width: 767px){
+    @media screen and (min-width: $mobile){
         width: 450px;
     }
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: $tablet){
         width: 450px;
     }
 
-    @media screen and (min-width: 1140px){
+    @media screen and (min-width: $desktop){
         width: 358px
     }
 }
@@ -94,7 +94,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
-    @media screen and (min-width: 1140px){
+    @media screen and (min-width: $desktop){
         display: flex; 
         align-items: center; 
          padding-top: 10px;
