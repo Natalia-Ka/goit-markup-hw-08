@@ -81,13 +81,13 @@
     padding-top: 34px;
     @extend %list;
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: $tablet){
         display: flex; 
         flex-wrap: wrap;
         margin: -15px;
     }
 
-    @media screen and (min-width: 1140px){
+    @media screen and (min-width: $desktop){
         display: flex; 
         flex-wrap: wrap;
         margin: -15px;
@@ -99,24 +99,22 @@
 }
 
 .portfolio-projects .item{
-    width: 100%;
-    margin-right: 30px;
-    margin-bottom: 30px;
+
     background: $primary-white-color;
 
-    @media screen and (max-width: 767px){
+    @media screen and (min-width: $mobile){
         &:not(:last-child) {
             margin-bottom: 30px;
             } 
     }
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: $tablet){
         flex-basis: calc((100% - 4 * 15px) / 2); 
         margin: 15px;
     }
 
-    @media screen and (min-width: 1140px){
-        width: calc((100% - 60px) / 3);
+    @media screen and (min-width: $desktop){
+        flex-basis: calc((100% - 6 * 15px) / 3);
         margin: 15px;
     }
 }
@@ -132,9 +130,11 @@
     padding-bottom: 20px;
 }
 
-// .portfolio-projects .item:nth-child(3n){
-//     margin-right: 0;
-// }
+.portfolio-projects .item:nth-child(3n){
+    @media screen and (min-width: $desktop){
+    margin-right: 0;
+}
+}
 
 .portfolio-description{
     position: absolute;
