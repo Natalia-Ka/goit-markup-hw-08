@@ -2,18 +2,24 @@
     position: relative;
 }
 
-  .navigation, .site-nav {
-    @media screen and (min-width: 768px) and (max-width: 1139px){
+  .main-nav .navigation, .site-nav, .contacts, .contacts-nav {
+    @media screen and (min-width: $tablet) {
     display: flex;
 }
 }
+
+.contacts, .contacts-nav{
+    @media screen and (min-width: $tablet) and (max-width: 1199px){
+    flex-direction: column;
+    }
+}
+
 .main-nav, .navigation, .site-nav, .contacts, .contacts-nav{
-    @media screen and (min-width: 1140px){
+    @media screen and (min-width: $desktop){
         display: flex;
         align-items: center;
     }
 }
-
 
 .menu-button{
     display: inline-flex;
@@ -25,9 +31,16 @@
     background-color: transparent;
 
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: $tablet){
         display: none;
     }
+
+    @media screen and (min-width: $mobile){
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
 }
 
 .menu-button .icon-cross{
@@ -47,7 +60,7 @@
 
     background-color: $primary-white-color;
 
-    @media screen and (max-width: 767px){
+    @media screen and (min-width: $mobile){
     text-align: center;
     display: none; 
     position: absolute;
@@ -60,16 +73,15 @@
             display: block;
         }
     }
+}
 
-
-     @media screen and (min-width: 768px){
-        width: 937px;
-        display: flex;
-        align-content: space-between;
-        flex-grow: 1;
-        align-items: baseline;
-    }   
-    }    
+    //  @media screen and (min-width: $tablet){
+    //     display: flex;
+    //     align-content: space-between;
+    //     flex-grow: 1;
+    //     align-items: baseline;
+    // }   
+    // }    
 
 
 
@@ -89,19 +101,21 @@
 }
 
 .contacts{
-    @media screen and (max-width: 767px){
+    @media screen and (min-width: $mobile) and (max-width: 767px){
         padding-bottom: 60px;
     }
-    @media screen and (min-width: 768px) and (max-width: 1139px){
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px){
         margin-left: 84px;
         padding-top: 21px;
+        padding-bottom: 21px;
     }
 }
 
 .site-nav{
     @extend %list;
 
-    @media screen and (min-width: 768px) and (max-width: 1139px){
+    @media screen and (min-width: $tablet) and (max-width: 1199px){
     padding-bottom: 32px;
     margin-left: 88px;
 }
@@ -115,7 +129,7 @@
     }
 }
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: $tablet){
         &:not(:last-child){
         margin-right: 50px;
         }
@@ -131,7 +145,7 @@
 }
 
 .contacts{
-    @media screen and (min-width: 1140px){
+    @media screen and (min-width: $desktop){
     margin-left: auto;
 }
 }
@@ -141,13 +155,21 @@
 }
 
 .contacts-nav .item + .item{
-    @media screen and (min-width: 1140px){
+    @media screen and (min-width: $desktop){
     margin-left: 30px;
+}
+}
+
+.contacts-nav .item{
+    @media screen and (min-width: $tablet){
+    font-size: 14px;
+    line-height: 1.14;
 }
 }
 
 .menu-link{
     font-weight: 500;
+    font-size: 14px; 
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
@@ -162,16 +184,17 @@
         color: $accent-color; 
     }
 
-    @media screen and (max-width: 767px){
+    @media screen and (min-width: $mobile) and (max-width: 767px){
         font-size: 18px;
+        line-height: 1.16;
         padding-bottom: 8px;
     }
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: $tablet){
         padding-bottom: 32px;
     }
 
-    @media screen and (min-width: 1140px){
+    @media screen and (min-width: $desktop){
         display: block;
         padding-top: 32px;
         padding-bottom: 32px;
@@ -201,7 +224,6 @@
 
 .menu-contacts{
     font-weight: 500;
-    line-height: 1.14;
     letter-spacing: 0.02em;
     color: $primary-text-color;
     text-decoration: none;
@@ -215,11 +237,13 @@
         color: $accent-color;  
     }
 
-    @media screen and (max-width: 767px){
+    @media screen and (min-width: $mobile){
         font-size: 18px;
+        line-height: 1.14;
     }
-    @media screen and (min-width: 768   px){
+    @media screen and (min-width: $tablet){
         font-size: 14px;
+        line-height: 1.14;
     }
 }
 

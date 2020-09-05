@@ -1,24 +1,28 @@
 .logo{
-    display: block;
+    // display: block;
     font-family: $font-family-logo;
     font-weight: 700;
-    line-height: 1.19;
     color: $title-text-color;
+    font-size: 24px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     text-decoration: none;
 
-    @media screen and (max-width: 767px){
+    @media screen and (min-width: $mobile){
+        display: inline-block;
         padding-top: 16px;
         padding-bottom: 16px;
-        font-size: 24px;
     }
 
-    @media screen and (min-width: 678px) and (max-width: 1139px){
-        font-size: 24px;
+    @media screen and (min-width: $tablet){
+        display: inline-block;
         padding-top: 26px;
+        padding-bottom: 26px;
         }
-    @media screen and (min-width: 678px) and (min-width: 1140px){
+
+    @media screen and (min-width: $desktop){
         font-size: 26px;
+        line-height: 1.19;
         }
 }
 
@@ -26,15 +30,13 @@
     color: $accent-color;
     font-family: $font-family-logo;
     font-weight: 700;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
 
-    @media screen and (max-width: 1139px){
-    font-size: 24px;
-    }
-
-    @media screen and (min-width: 1140px){
+    @media screen and (min-width: $desktop){
     font-size: 26px;
+    line-height: 1.19;
     }
 }
 
@@ -43,10 +45,15 @@
     color: $primary-white-color;
     font-family: $font-family-logo;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     text-decoration: none;
 
     margin-bottom: 20px;
+
+    @media screen and (min-width: $desktop){
+    font-size: 26px;
+    line-height: 1.19;
+    }
 }
