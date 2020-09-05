@@ -758,6 +758,8 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 450px;
+  height: 609px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -771,9 +773,10 @@ img {
   z-index: 10;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .modal {
-    width: 450px;
+    max-width: 528px;
+    width: 100%;
   }
 }
 
@@ -803,6 +806,8 @@ img {
 }
 
 .modal-title {
+  display: inline-block;
+  width: 370px;
   font-weight: bold;
   font-size: 20px;
   line-height: 1.15;
@@ -812,23 +817,24 @@ img {
   margin-bottom: 12px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .modal-title {
-    display: inline-block;
-    width: 370px;
+    width: 528px;
   }
 }
 
 .modal-form {
+  width: 450px;
+  height: 609px;
   display: block;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 12px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .modal-form {
-    width: 450px;
+    width: 528px;
   }
 }
 
@@ -856,6 +862,7 @@ img {
 }
 
 .modal-form-input {
+  width: 370px;
   letter-spacing: 0.01em;
   color: #757575;
   margin: 0;
@@ -866,9 +873,10 @@ img {
   border-radius: 4px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .modal-form-input {
-    width: 370px;
+    width: 448px;
+    width: 100%;
   }
 }
 
@@ -885,6 +893,7 @@ img {
 }
 
 .modal-form-comment {
+  width: 370px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -898,9 +907,10 @@ img {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .modal-form-comment {
-    width: 370px;
+    width: 448px;
+    width: 100%;
   }
 }
 
@@ -958,15 +968,15 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .checkbox-label {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
