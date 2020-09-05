@@ -78,18 +78,23 @@
 }
 
 .portfolio-projects{
-    padding-top: 34px;
     @extend %list;
+
+    @media screen and (min-width: $mobile){
+        padding-top: 40px;
+    }
 
     @media screen and (min-width: $tablet){
         display: flex; 
         flex-wrap: wrap;
+        padding-top: 14px;
         margin: -15px;
     }
 
     @media screen and (min-width: $desktop){
         display: flex; 
         flex-wrap: wrap;
+        padding-top: 34px;
         margin: -15px;
     }
 }
@@ -102,10 +107,17 @@
 
     background: $primary-white-color;
 
-    @media screen and (min-width: $mobile){
+    @media screen and (max-width: 767px){
         &:not(:last-child) {
             margin-bottom: 30px;
             } 
+    }
+
+    @media screen and (min-width: $tablet){
+        &:nth-last-child(-n+2){
+            margin-bottom: 0;
+            margin-right: 0;
+        }
     }
 
     @media screen and (min-width: $tablet){
@@ -132,6 +144,11 @@
 
 .portfolio-projects .item:nth-child(3n){
     @media screen and (min-width: $desktop){
+    margin-right: 0;
+}
+}
+.portfolio-projects .item:nth-child(2n){
+    @media screen and (min-width: $tablet){
     margin-right: 0;
 }
 }

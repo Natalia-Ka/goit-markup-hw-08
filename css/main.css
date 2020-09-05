@@ -316,7 +316,6 @@ img {
 }
 
 .container {
-  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -335,7 +334,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
   }
@@ -1070,13 +1069,14 @@ textarea {
 }
 
 .features {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .features {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 94px;
+    padding-bottom: 0;
   }
 }
 
@@ -1096,7 +1096,7 @@ textarea {
   margin-top: 10px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .feature-item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1110,7 +1110,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .feature-item {
     -ms-flex-preferred-size: calc((100% - 8 * 15px) / 4);
         flex-basis: calc((100% - 8 * 15px) / 4);
@@ -1129,7 +1129,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .features-list {
     margin: -15px;
   }
@@ -1209,7 +1209,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 1139px) {
+@media screen and (min-width: 1200px) {
   .about-us-title {
     font-size: 28px;
     margin-bottom: 30px;
@@ -1284,7 +1284,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .about-us-list .item {
     -ms-flex-preferred-size: calc((100% - 8 * 15px) / 4);
         flex-basis: calc((100% - 8 * 15px) / 4);
@@ -1347,21 +1347,38 @@ textarea {
   color: #FFFFFF;
 }
 
-@media screen and (max-width: 1139px) {
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
   .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
 .clients-title {
   color: #212121;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) and (min-width: 768px) {
+  .clients-title {
+    font-size: 28px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-title {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .client-list {
@@ -1408,7 +1425,7 @@ textarea {
   color: #2196F3;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .clients-border {
     -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
         flex-basis: calc((100% - 4 * 15px) / 2);
@@ -1424,7 +1441,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .clients-border {
     -ms-flex-preferred-size: calc((100% - 12 * 15px) / 6);
         flex-basis: calc((100% - 12 * 15px) / 6);
@@ -1895,8 +1912,10 @@ textarea {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-projects {
-  padding-top: 34px;
+@media screen and (min-width: 480px) {
+  .portfolio-projects {
+    padding-top: 40px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1906,6 +1925,7 @@ textarea {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding-top: 14px;
     margin: -15px;
   }
 }
@@ -1917,6 +1937,7 @@ textarea {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding-top: 34px;
     margin: -15px;
   }
 }
@@ -1929,9 +1950,16 @@ textarea {
   background: #FFFFFF;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .portfolio-projects .item:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-projects .item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+    margin-right: 0;
   }
 }
 
@@ -1962,6 +1990,12 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .portfolio-projects .item:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-projects .item:nth-child(2n) {
     margin-right: 0;
   }
 }

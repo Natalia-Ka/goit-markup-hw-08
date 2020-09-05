@@ -1,9 +1,13 @@
 .features{
-padding-top: 94px;
-@media screen and (max-width: 1140px){ 
+
     padding-top: 60px;
     padding-bottom: 60px; 
-} 
+
+
+@media screen and (min-width: $desktop){
+    padding-top: 94px;
+    padding-bottom: 0;
+}
 }
 
 .features-title{
@@ -28,18 +32,18 @@ padding-top: 94px;
 
 .feature-item{
 
-    @media screen and (max-width: 767px){
+    @media screen and (min-width: $mobile){
         &:not(:last-child) {
             margin-bottom: 30px;
             } 
     }
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: $tablet){
         flex-basis: calc((100% - 4 * 15px) / 2); 
         margin: 15px;
     }
 
-    @media screen and (min-width: 1140px){
+    @media screen and (min-width: $desktop){
         flex-basis: calc((100% - 8 * 15px) / 4);
         margin: 15px;
     }
@@ -49,13 +53,13 @@ padding-top: 94px;
 .features-list{  
     @extend %list;
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: $tablet){
         display: flex; 
         flex-wrap: wrap;
         margin: -15px;
     }
 
-    @media screen and (min-width: 1140px){
+    @media screen and (min-width: $desktop){
         margin: -15px;
     }
 

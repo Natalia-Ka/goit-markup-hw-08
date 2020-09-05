@@ -39,17 +39,11 @@
         display:flex;
         justify-content: center;
     }
-
-    // @media screen and (min-width: $desktop){
-    //     display:flex;
-    //     justify-content: center;
-    // }
 }
 
 .portfolio-filters .item:not(:last-child){
     margin-right: 8px;
 }
-
 
 .portfolio-filters .item:nth-child(-n+3){
     @media screen and (max-width: 767px){
