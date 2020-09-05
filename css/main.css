@@ -341,7 +341,7 @@ img {
 }
 
 .logo {
-  font-family: Raleway sans-serif;
+  font-family: Raleway serif;
   font-weight: 700;
   color: #212121;
   font-size: 24px;
@@ -375,7 +375,7 @@ img {
 
 .logo-web {
   color: #2196F3;
-  font-family: Raleway sans-serif;
+  font-family: Raleway serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
@@ -392,7 +392,7 @@ img {
 .logo-footer {
   display: block;
   color: #FFFFFF;
-  font-family: Raleway sans-serif;
+  font-family: Raleway serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
@@ -444,8 +444,6 @@ img {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding-top: 10px;
-  padding-bottom: 10px;
   padding-left: 0;
   padding-right: 0;
   border: none;
@@ -497,27 +495,27 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .site-navigation {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1139px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .site-navigation {
     padding-top: 32px;
     padding-bottom: 0px;
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .site-navigation {
     margin-left: 93px;
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .contacts {
     padding-bottom: 60px;
   }
@@ -538,7 +536,7 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .site-nav .item:not(:last-child) {
     margin-bottom: 40px;
   }
@@ -550,7 +548,7 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .mail:not(:last-child), .phone:not(:last-child) {
     margin-bottom: 16px;
   }
