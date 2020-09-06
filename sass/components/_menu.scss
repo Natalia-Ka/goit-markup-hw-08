@@ -63,7 +63,7 @@
 .menu-container{
     background-color: $primary-white-color;
 
-    @media screen and (min-width: $mobile){
+    @media screen and (min-width: $mobile) and (max-width: 767px){
     text-align: center;
     display: none; 
     position: absolute;
@@ -81,13 +81,12 @@
         display: flex;
         justify-content: space-between;
         align-items: baseline;
-        position: static;
+        // position: static;
         padding: 0;
         margin: 0; 
     }   
 }
  
-
 
 .site-navigation{
     @media screen and (max-width: 767px){

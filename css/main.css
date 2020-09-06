@@ -487,7 +487,7 @@ img {
   background-color: #FFFFFF;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .menu-container {
     text-align: center;
     display: none;
@@ -513,7 +513,6 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    position: static;
     padding: 0;
     margin: 0;
   }
