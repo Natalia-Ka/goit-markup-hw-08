@@ -94,19 +94,23 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
-    @media screen and (min-width: $desktop){
-        display: flex; 
-        align-items: center; 
-         padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 29px;
-        padding-right: 28px;
+    
+    display: inline-flex; 
+    align-items: center; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 28px;
 
-        margin-left: 12px;
-    }
-
+    margin-left: 12px;
 }  
 
-.icon-send{
-    margin-left: 5px;
+
+.btn-footer::after{
+margin-left: 10px;
+content: "";
+width: 24px;
+height: 24px;
+background-image: url(../images/icon-send.svg);
+background-size: contain;
 }
