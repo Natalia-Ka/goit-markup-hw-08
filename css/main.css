@@ -1270,10 +1270,6 @@ textarea {
   width: 100%;
 }
 
-.about-us-list {
-  margin: -15px;
-}
-
 @media screen and (min-width: 768px) {
   .about-us-list {
     display: -webkit-box;
@@ -1287,6 +1283,7 @@ textarea {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: -15px;
   }
 }
 
