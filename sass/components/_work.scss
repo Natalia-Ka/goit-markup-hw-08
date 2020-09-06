@@ -1,9 +1,8 @@
 .work{
-    @media screen and (max-width: 767px) and (max-width: 1199px){
+    @media screen and (max-width: 767px) and (min-width: $tablet){
         display: none;
     }
 }
-
 
 .section{
     padding-bottom: 94px;
