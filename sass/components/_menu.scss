@@ -55,9 +55,12 @@
     display: none;
 }
 
+.icon-menu-mob:hover,
+.icon-menu-mob:focus{
+    fill:  $accent-color;
+}
 
 .menu-container{
-
     background-color: $primary-white-color;
 
     @media screen and (min-width: $mobile){
@@ -74,10 +77,9 @@
         }
     }
 
-    @media screen and (min-width: $tablet) and (min-width: $desktop){
+    @media screen and (min-width: $tablet) {
         display: flex;
         justify-content: space-between;
-        flex-grow: 1;
         align-items: baseline;
         position: static;
         padding: 0;
@@ -105,12 +107,6 @@
 .contacts{
     @media screen and (min-width: $mobile) and (max-width: 767px){
         padding-bottom: 60px;
-    }
-
-    @media screen and (min-width: $tablet) and (max-width: 1199px){
-        margin-left: 84px;
-        padding-top: 21px;
-        padding-bottom: 21px;
     }
 }
 
