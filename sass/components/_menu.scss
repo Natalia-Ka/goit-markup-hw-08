@@ -1,5 +1,9 @@
 .page-header{
     position: relative;
+
+    @media screen and (min-width: $desktop){
+    border-bottom: 1px solid $border-menu;
+    }
 }
 
   .main-nav .navigation, .site-nav, .contacts, .contacts-nav {
@@ -17,7 +21,6 @@
 .main-nav, .navigation, .site-nav, .contacts, .contacts-nav{
     @media screen and (min-width: $desktop){
         display: flex;
-        // width: 100%;
         align-items: center;
     }
 }
