@@ -1661,7 +1661,7 @@ textarea {
   margin-right: 10px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .footer-newsletter {
     padding-top: 0;
     padding-bottom: 60px;
