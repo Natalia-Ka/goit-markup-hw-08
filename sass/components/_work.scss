@@ -1,6 +1,8 @@
 .work{
-    @media screen and (max-width: 767px) and (min-width: $tablet){
-        display: none;
+    display: none;
+
+    @media screen and (min-width: $desktop){
+    display: block;
     }
 }
 
