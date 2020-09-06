@@ -412,7 +412,7 @@ img {
   position: relative;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .main-nav .navigation, .site-nav, .contacts, .contacts-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -440,6 +440,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .navigation {
+    width: 100%;
+  }
+}
+
 .menu-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -458,7 +464,7 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .menu-button {
     position: absolute;
     top: 0;
@@ -485,6 +491,7 @@ img {
 
 .menu-container {
   background-color: #FFFFFF;
+  width: 100%;
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -494,7 +501,6 @@ img {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
     border-top: 1px solid #ECECEC;
   }
   .menu-container.is-open {
@@ -507,7 +513,6 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -524,7 +529,6 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -542,14 +546,14 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1139px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .site-navigation {
     padding-top: 32px;
     padding-bottom: 0px;
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .site-navigation {
     margin-left: 93px;
   }
