@@ -24,7 +24,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 450px;
+    max-width: 450px;
     height: 609px;
 
     background: $primary-white-color;
@@ -38,7 +38,7 @@
 
    @media screen and (min-width: $desktop) {
     max-width: 528px;
-    width: 100%
+    height: 581px;
    }
 }
 
@@ -82,12 +82,13 @@
 }
 
 .modal-form{
-    width: 450px;
-    height: 609px;
+    max-width: 450px;
+    max-height: 609px;
     display: block;
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 12px;
+    
 
     @media screen and (min-width: $desktop){
         width: 528px;
@@ -105,15 +106,16 @@
 .modal-form-field{
     position: relative;
     display: flex;
-    max-width: 448px;
+    // max-width: 448px;
     width: 100%;
     flex-direction: column;
     text-align: left;
     margin-bottom: 10px;
 } 
 
-.modal-form-input{  
-    width: 370px;
+.modal-form-input{ 
+    width: 100%; 
+    // max-width: 370px;
     letter-spacing: 0.01em;
     color: $primary-text-color;
     margin:0;
@@ -142,8 +144,13 @@
      fill:  $accent-color;
 }
 
+.modal-form-field:focus-within > .modal-icon{
+    fill:  $accent-color;
+}
+
 .modal-form-comment{
-    width: 370px;
+    // max-width: 370px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -152,7 +159,7 @@
     margin-bottom: 20px;
 
     @media screen and (min-width: $desktop){
-        width: 448px;
+        max-width: 448px;
         width: 100%
        }
 }
