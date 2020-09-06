@@ -1,5 +1,5 @@
 .work{
-    @media screen and (min-width: $mobile) and (max-width: 1199px){
+    @media screen and (max-width: 767px) and (max-width: 1199px){
         display: none;
     }
 }
