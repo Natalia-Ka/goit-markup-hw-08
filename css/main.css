@@ -507,6 +507,7 @@ img {
     position: absolute;
     top: 100%;
     left: 0;
+    z-index: 10;
     border-top: 1px solid #ECECEC;
   }
   .menu-container.is-open {
