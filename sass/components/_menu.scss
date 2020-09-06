@@ -74,13 +74,13 @@
     background-color: $primary-white-color;
     width: 100%;
 
-    @media screen and (min-width: $mobile) and (max-width: 767px){
+    @media screen and (max-width: 767px){
     text-align: center;
     display: none; 
     position: absolute;
     top: 100%;
     left: 0;
-    // width: 100%;
+
     border-top: 1px solid $border-menu;
 
         &.is-open{
