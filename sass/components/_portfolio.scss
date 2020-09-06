@@ -80,11 +80,11 @@
 .portfolio-projects{
     @extend %list;
 
-    @media screen and (min-width: $mobile){
+    @media screen and (max-width: 767px){
         padding-top: 40px;
     }
 
-    @media screen and (min-width: $tablet){
+    @media screen and (min-width: $tablet) and (max-width: 1199px){
         display: flex; 
         flex-wrap: wrap;
         padding-top: 14px;
@@ -102,6 +102,20 @@
 .portfolio-picture{
     width: 100%;
 }
+
+//     @media screen and (max-width: 767px){
+//         width: 450px;
+//         height: 404px;
+//     }
+//     @media screen and (min-width: $tablet) and (max-width: 1199px){
+//         width: 354px;
+//         height: 404px;
+//     }
+//     @media screen and (min-width: $desktop){  
+//         width: 370px;
+//         height: 404px;
+// }
+//     }
 
 .portfolio-projects .item{
 
