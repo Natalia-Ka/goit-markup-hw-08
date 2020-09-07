@@ -1,5 +1,5 @@
 .logo{
-    // display: block;
+    display: inline-block;
     font-family: $font-family-logo;
     font-weight: 700;
     color: $title-text-color;
@@ -7,6 +7,8 @@
     line-height: 1.16;
     letter-spacing: 0.03em;
     text-decoration: none;
+    padding-top: 16px;
+    padding-bottom: 16px;
 
     @media screen and (min-width: $mobile){
         display: inline-block;
