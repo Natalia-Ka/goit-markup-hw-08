@@ -341,7 +341,7 @@ img {
 }
 
 .logo {
-  font-family: Raleway serif;
+  font-family: Raleway sans-serif;
   font-weight: 700;
   color: #212121;
   font-size: 24px;
@@ -375,7 +375,7 @@ img {
 
 .logo-web {
   color: #2196F3;
-  font-family: Raleway serif;
+  font-family: Raleway sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
@@ -392,7 +392,7 @@ img {
 .logo-footer {
   display: block;
   color: #FFFFFF;
-  font-family: Raleway serif;
+  font-family: Raleway sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
