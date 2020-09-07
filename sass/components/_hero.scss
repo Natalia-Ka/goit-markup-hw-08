@@ -26,7 +26,7 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    @media screen and (max-width: 767px){
+   
     height: 400px;
     padding-top: 118px;
     background-image: linear-gradient(
@@ -43,7 +43,7 @@
     rgba(47, 48, 58, 0.4)
     ),  url(../images/header/mobile/header-mobile@2x.jpg); 
   }
-}
+
 
     @media screen and (min-width: $tablet){
     height: 400px;
