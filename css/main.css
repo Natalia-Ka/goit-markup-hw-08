@@ -501,6 +501,10 @@ img {
 .menu-container {
   background-color: #FFFFFF;
   width: 100%;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media screen and (max-width: 767px) {
@@ -531,6 +535,8 @@ img {
             align-items: baseline;
     padding: 0;
     margin: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 
@@ -546,6 +552,8 @@ img {
         -ms-flex-align: baseline;
             align-items: baseline;
     padding: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 
@@ -569,9 +577,25 @@ img {
   }
 }
 
+.contacts {
+  padding-bottom: 60px;
+}
+
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .contacts {
     padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    padding-bottom: 0;
   }
 }
 
@@ -606,7 +630,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .contacts-nav .item {
     font-size: 14px;
     line-height: 1.14;
@@ -615,7 +639,7 @@ img {
 
 .menu-link {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -643,12 +667,14 @@ img {
 @media screen and (min-width: 768px) {
   .menu-link {
     padding-bottom: 32px;
+    font-size: 14px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .menu-link {
     display: block;
+    font-size: 14px;
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -672,6 +698,7 @@ img {
 }
 
 .menu-contacts {
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #757575;
@@ -696,6 +723,13 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .menu-contacts {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .menu-contacts {
     font-size: 14px;
     line-height: 1.14;
