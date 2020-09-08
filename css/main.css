@@ -959,6 +959,13 @@ img {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .modal-title {
+    max-width: 370px;
+    width: 100%;
+  }
+}
+
 .modal-form {
   display: block;
   width: 450px;
