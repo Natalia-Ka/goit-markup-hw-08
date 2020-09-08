@@ -342,7 +342,7 @@ img {
 
 .logo {
   display: inline-block;
-  font-family: Raleway sans-serif;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   color: #212121;
   font-size: 24px;
@@ -378,7 +378,7 @@ img {
 
 .logo-web {
   color: #2196F3;
-  font-family: Raleway sans-serif;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
@@ -395,7 +395,7 @@ img {
 .logo-footer {
   display: block;
   color: #FFFFFF;
-  font-family: Raleway sans-serif;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
@@ -1046,7 +1046,7 @@ img {
           flex-direction: column;
   text-align: left;
   font-size: 12px;
-  font-family: Roboto sans-serif;
+  font-family: Roboto, sans-serif;
   margin-bottom: 20px;
 }
 
@@ -1066,7 +1066,7 @@ textarea {
 .modal-form-comment::-webkit-input-placeholder {
   display: inline-block;
   letter-spacing: 0.01em;
-  font-family: Roboto sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -1076,7 +1076,7 @@ textarea {
 .modal-form-comment:-ms-input-placeholder {
   display: inline-block;
   letter-spacing: 0.01em;
-  font-family: Roboto sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -1086,7 +1086,7 @@ textarea {
 .modal-form-comment::-ms-input-placeholder {
   display: inline-block;
   letter-spacing: 0.01em;
-  font-family: Roboto sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -1096,7 +1096,7 @@ textarea {
 .modal-form-comment::placeholder {
   display: inline-block;
   letter-spacing: 0.01em;
-  font-family: Roboto sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
