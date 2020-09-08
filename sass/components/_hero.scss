@@ -46,6 +46,12 @@
   }
 
 
+    background: url(../images/header/mobile/Header-mobile.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
     @media screen and (min-width: $tablet){
     height: 400px;
     padding-top: 118px;
