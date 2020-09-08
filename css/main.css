@@ -784,7 +784,7 @@ img {
 }
 
 .hero {
-  max-width: 1600px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
