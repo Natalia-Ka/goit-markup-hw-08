@@ -22,10 +22,12 @@
 
 .modal{
     position: absolute;
+
     top: 50%;
     left: 50%;
-    width: 450px;
-    height: 609px;
+
+    width: 100%;
+    max-height: 609px;
 
     text-align: center;
 
@@ -38,10 +40,16 @@
 
    z-index: 10;
 
-   @media screen and (min-width: $desktop) {
+   @media screen and (min-width: $desktop){
     width: 528px;
     height: 581px;
    }
+
+   @media screen and (min-width: $mobile) and (max-width: 1199px){
+    width: 450px;
+    height: 609px;
+   }
+
 }
 
 .btn-close{
@@ -68,6 +76,7 @@
 
 .modal-title{
     display: inline-block;
+    // width: 100%;
     width: 370px;
    font-weight: bold;
    font-size: 20px;
@@ -85,11 +94,14 @@
 
 .modal-form{
     display: block;
+    max-width: 450px;
+    width: 100%;
+    max-height: 609px;
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 12px;
 
-    @media screen and (max-width: 1199px){
+    @media screen and (min-width:$mobile) and (max-width: 1199px){
         width: 450px;
         height: 609px;
        }
@@ -110,7 +122,6 @@
 .modal-form-field{
     position: relative;
     display: flex;
-    // width: 448px;
     width: 100%;
     flex-direction: column;
     text-align: left;
@@ -120,7 +131,6 @@
 
 .modal-form-input{ 
     width: 100%; 
-    // max-width: 370px;
     letter-spacing: 0.01em;
     color: $primary-text-color;
     margin:0;
@@ -159,9 +169,8 @@
 }
 
 .modal-form-comment{
-    // max-width: 370px;
     width: 100%;
-    height: 120px;
+    max-height: 120px;
 
     display: flex;
     flex-direction: column;
@@ -229,6 +238,7 @@ textarea{
     border-radius: 2px;
 
     margin-right: 7px;
+
 }
 
 .checkbox:checked + .icon-checkbox{
