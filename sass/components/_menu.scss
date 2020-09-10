@@ -25,16 +25,28 @@
     }
 }
 
-.navigation{
+// .navigation{
+//     @media screen and (min-width: $desktop){
+//     width:100%;
+// }
+// }
+
+.main-nav{
     @media screen and (min-width: $desktop){
     width:100%;
 }
+    @media screen and (min-width: $tablet) and (max-width: 1199px){
+    display: flex;
+}
 }
 
+
 .navigation{
+@media screen and (min-width: $mobile) and (max-width: 767px){
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
 }
 
 .menu-button{
@@ -50,13 +62,6 @@
     @media screen and (min-width: $tablet){
         display: none;
     }
-
-    // @media screen and (max-width: 767px){
-    //     position: absolute;
-    //     top: 0;
-    //     right: 0;
-    // }
-
 }
 
 .menu-button .icon-cross{
