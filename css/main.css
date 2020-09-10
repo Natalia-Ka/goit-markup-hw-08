@@ -463,6 +463,10 @@ img {
   }
 }
 
+.navigation {
+  width: 100%;
+}
+
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .navigation {
     display: -webkit-box;
@@ -1970,7 +1974,7 @@ textarea {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 362px;
+    max-width: 362px;
   }
 }
 
