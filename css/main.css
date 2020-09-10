@@ -455,6 +455,18 @@ img {
   }
 }
 
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .menu-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -470,14 +482,6 @@ img {
 @media screen and (min-width: 768px) {
   .menu-button {
     display: none;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .menu-button {
-    position: absolute;
-    top: 0;
-    right: 0;
   }
 }
 
