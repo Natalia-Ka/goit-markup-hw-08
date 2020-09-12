@@ -477,7 +477,7 @@ img {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 479px) {
   .navigation {
     display: -webkit-box;
     display: -ms-flexbox;
