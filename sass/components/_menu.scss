@@ -36,12 +36,12 @@
 
 
 .navigation{
-@media screen and (min-width: $mobile) and (max-width: 767px){
+    @media screen and (min-width: $mobile) and (max-width: 767px){
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-@media screen and (max-width: 479px){
+    @media screen and (max-width: 479px){
     display: flex;
     justify-content: space-between;
     align-items: center;
